@@ -123,6 +123,9 @@ nav i {
 .bi-cart-fill{
     transition: 0.3s ease;
 }
+.bi-cart-fill {
+    color: #3D3D3D;
+}
 
 .bi-cart-fill:hover{
     color: #F2BAC9;
@@ -513,6 +516,11 @@ button.prev:hover, button.next:hover {
     padding-top: 20px;
 }
 
+#sobre_pagina {
+    display: flex;
+    
+}
+
 #sobre_pagina img {
     width: 517px;
     height: 737px;
@@ -644,7 +652,7 @@ button.prev:hover, button.next:hover {
 }
 
 #produtos {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -763,6 +771,24 @@ button.prev:hover, button.next:hover {
 .product.text-container.page-title-small {
     margin-top: 24px;
     background-color: #F2BAC9;
+}
+
+.product_text-container_checkout {
+    background-color: #363434;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.product_text-container_checkout .main-text  {
+    color: #ffff;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.product_text-container_checkout p {
+    color: #ffff;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .product.text-container {
@@ -1073,23 +1099,39 @@ button.prev:hover, button.next:hover {
 
 .total_container {
     align-items: stretch;
-    border: 1px solid #000;
+    border: none;
     padding: 16px;
-    border-radius: 5px;
+    border-radius: 30px;
     margin-bottom: 15px;
+    background-color: #FCFCFC;
 }
 
 .checkout_btn {
-        margin-bottom: 15px;
-        width: 100%;
-        font-size: 20px;
-        padding: 10px 0px;
-    }
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0px;
+    border-radius: 30px;
+    background-color: #E9DFEF;
+    box-shadow: inset;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+   
+
+  
+}
+
+.checkout_btn:hover{
+    background: rgb(223,217,253);
+    background: linear-gradient(124deg, rgba(223,217,253,1) 0%, rgba(233,223,239,1) 35%, rgba(238,227,231,1) 63%, rgba(243,230,214,1) 100%);
+    transform: scale(1.1);
+}
 
 .total {
-        padding-bottom: 10px;
+    padding-bottom: 10px;
 
-    }
+}
 
 .total:nth-child(2) h3{
     font-size: 14px;
@@ -1122,6 +1164,7 @@ button.prev:hover, button.next:hover {
     font-size: 16px;
     border-radius: 10px;
     border: 1px solid #e4e4e4;
+    border-radius: 20px;
 }
 
 .form-field.cep,.form-field.uf{
